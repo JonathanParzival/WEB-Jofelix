@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jonathan Felix Dion Prasatya - Computer Engineering Student at Telkom University focused on cloud computing, networking, IoT, and IT infrastructure.">
+  <meta name="keywords" content="Jonathan Felix Dion Prasatya, Computer Engineering, Telkom University, Network Engineer, Cloud Computing, IoT Developer, IT Infrastructure">
+  <meta name="author" content="Jonathan Felix Dion Prasatya">
+  <title>Jonathan Felix | Spider-Verse Network Access</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#dashboard">Skip to portfolio</a>
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <section class="access-portal" id="accessPortal" aria-label="Spider-Verse network access portal">
+    <div class="portal-grid" aria-hidden="true"></div>
+    <div class="portal-web portal-web--left" aria-hidden="true"></div>
+    <div class="portal-web portal-web--right" aria-hidden="true"></div>
+
+    <div class="portal-core">
+      <div class="portal-ring" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="portal-console">
+        <p class="console-line">----------------------</p>
+        <p class="console-title">SPIDER-VERSE NETWORK</p>
+        <p class="console-state" id="portalState">SYSTEM INITIALIZING...</p>
+        <p class="console-line">----------------------</p>
+
+        <div class="scan-feed" id="scanFeed" aria-live="polite">
+          <span>Booting secure access layer...</span>
+        </div>
+
+        <div class="progress-shell" aria-label="Loading progress">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="progress-meta">
+          <span id="progressLabel">0%</span>
+          <span>JFD-NET/PORTAL</span>
+        </div>
+
+        <div class="access-granted" id="accessGranted" hidden>
+          <span class="granted-kicker">ACCESS GRANTED</span>
+          <h1>Welcome to<br>Jonathan Felix Network</h1>
+          <button class="enter-button" id="enterPortal" type="button">
+            <span>Enter Portal</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="portal-transition" id="portalTransition" aria-hidden="true">
+    <div class="transition-web"></div>
+    <div class="transition-flash"></div>
+  </div>
+
+  <div class="dashboard-shell" id="dashboardShell" hidden>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#dashboard" aria-label="Jonathan Felix dashboard home">
+          <span class="brand-mark">JF</span>
+          <span>
+            <strong>Spider-Net OS</strong>
+            <small>Cyber Dashboard</small>
+          </span>
+        </a>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#music">Music</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-pill"><span></span> Online</div>
+
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="dashboard">
+      <section class="hero section-pad">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Authenticated Portfolio Node</p>
+          <h2>Jonathan Felix Dion Prasatya</h2>
+          <p class="typing-line"><span id="typedRole">Computer Engineering Student</span></p>
+          <p class="hero-summary">
+            Computer Engineering student at Telkom University with strong interest in cloud
+            computing, computer networking, IT infrastructure, and IoT development. Currently
+            serving as an EVCONN Laboratory Assistant.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="cv.pdf" download>Download CV</a>
+            <a class="btn btn-secondary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="profile-module reveal">
+          <div class="profile-hud">
+            <span>IDENTITY VERIFIED</span>
+            <span>JFD-01</span>
+          </div>
+          <div class="profile-frame">
+            <img src="profile.jpg" alt="Portrait of Jonathan Felix Dion Prasatya" id="profileImage" loading="lazy">
+            <div class="profile-fallback" aria-hidden="true">JF</div>
+          </div>
+          <div class="profile-data">
+            <span>Computer Engineering</span>
+            <strong>Telkom University</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="status-panel section-narrow reveal" aria-label="Live system status">
+        <article><span class="pulse-dot"></span><small>Network Status</small><strong>Online</strong></article>
+        <article><span class="pulse-dot"></span><small>Cloud Status</small><strong>Active</strong></article>
+        <article><span class="pulse-dot"></span><small>IoT Status</small><strong>Running</strong></article>
+        <article><span class="pulse-dot"></span><small>Lab Status</small><strong>Connected</strong></article>
+      </section>
+
+      <section class="section section-narrow" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> 01 / Professional Summary</p>
+          <h2>About</h2>
+          <p>
+            A recruiter-friendly profile presented as a cyber operations dashboard, focused on
+            real academic, laboratory, network, and infrastructure experience.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass-card about-card reveal">
+            <h3>Profile</h3>
+            <p>
+              I am a Computer Engineering student based in Bandung, Indonesia, currently
+              studying at Telkom University. My career interests include cloud computing,
+              computer networking, IT infrastructure, and IoT development.
+            </p>
+            <p>
+              At EVCONN Laboratory, I support computer network and data practical sessions,
+              manage lab devices, and assist with troubleshooting network systems.
+            </p>
+          </article>
+
+          <div class="stat-grid reveal">
+            <article><span data-count="4">0</span><small>Project Areas</small></article>
+            <article><span data-count="2">0</span><small>Experience Roles</small></article>
+            <article><span data-count="4">0</span><small>Skill Domains</small></article>
+            <article><span data-count="1">0</span><small>University</small></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-narrow" id="skills">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> 02 / Capability Matrix</p>
+          <h2>Skills</h2>
+          <p>Futuristic dashboard cards for the technical areas that define my current focus.</p>
+        </div>
+
+        <div class="card-grid card-grid-4">
+          <article class="skill-card reveal">
+            <span class="card-code">CLD</span>
+            <h3>Cloud & Infrastructure</h3>
+            <div class="badges"><span>Cloud Computing</span><span>Linux</span><span>Virtualization</span><span>Infrastructure</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <span class="card-code">NET</span>
+            <h3>Networking</h3>
+            <div class="badges"><span>LAN</span><span>Routing</span><span>Switching</span><span>Troubleshooting</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <span class="card-code">DEV</span>
+            <h3>Programming</h3>
+            <div class="badges"><span>Python</span><span>C/C++</span><span>MySQL</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <span class="card-code">OPS</span>
+            <h3>Tools</h3>
+            <div class="badges"><span>Git</span><span>GitHub</span><span>ESP32</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-narrow" id="experience">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> 03 / Operations Timeline</p>
+          <h2>Experience</h2>
+          <p>Laboratory and internship responsibilities mapped as a cyber timeline.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-entry reveal">
+            <div class="timeline-node"></div>
+            <div class="glass-card timeline-card">
+              <div>
+                <h3>EVCONN Laboratory Assistant</h3>
+                <small>Telkom University</small>
+              </div>
+              <ul>
+                <li>Teaching Computer Network and Data practical sessions.</li>
+                <li>Managing laboratory devices.</li>
+                <li>Network troubleshooting.</li>
+                <li>Practical session support.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-entry reveal">
+            <div class="timeline-node"></div>
+            <div class="glass-card timeline-card">
+              <div>
+                <h3>Internship at BNN Kota Bandung</h3>
+                <small>Bandung, Indonesia</small>
+              </div>
+              <ul>
+                <li>LAN installation.</li>
+                <li>Network configuration.</li>
+                <li>IT support.</li>
+                <li>Documentation.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-narrow" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> 04 / Project Vault</p>
+          <h2>Projects</h2>
+          <p>Actual projects only, displayed as premium glassmorphism system cards.</p>
+        </div>
+
+        <div class="card-grid card-grid-2">
+          <article class="project-card reveal">
+            <span class="card-code">WEB</span>
+            <h3>GoMakbon Website</h3>
+            <p>Business profile website for presenting company information, products, and services online.</p>
+            <div class="badges"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Hostinger</span></div>
+          </article>
+          <article class="project-card reveal">
+            <span class="card-code">SIM</span>
+            <h3>Network Infrastructure Simulation</h3>
+            <p>Infrastructure simulation using Cisco Packet Tracer with routing, switching, and networking concepts.</p>
+            <div class="badges"><span>Cisco Packet Tracer</span><span>Routing</span><span>Switching</span><span>Networking</span></div>
+          </article>
+          <article class="project-card reveal">
+            <span class="card-code">IOT</span>
+            <h3>ESP32 IoT Monitoring System</h3>
+            <p>IoT monitoring system using ESP32, WiFi connectivity, and cloud-oriented data flow.</p>
+            <div class="badges"><span>ESP32</span><span>IoT</span><span>WiFi</span><span>Cloud</span></div>
+          </article>
+          <article class="project-card reveal">
+            <span class="card-code">LAB</span>
+            <h3>Cloud Computing Lab Project</h3>
+            <p>Cloud computing lab project focused on Linux, infrastructure, and system operations.</p>
+            <div class="badges"><span>Linux</span><span>Cloud Computing</span><span>Infrastructure</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-narrow" id="hobbies">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> 05 / Activity Feed</p>
+          <h2>Hobbies</h2>
+          <p>Personal interests that support learning, focus, and technical creativity.</p>
+        </div>
+
+        <div class="card-grid card-grid-5">
+          <article class="hobby-card reveal"><span>MU</span><h3>Music</h3><p>Listening to Spotify while studying and coding.</p></article>
+          <article class="hobby-card reveal"><span>TX</span><h3>Technology Exploration</h3><p>Learning new technologies.</p></article>
+          <article class="hobby-card reveal"><span>CC</span><h3>Cloud Computing</h3><p>Exploring cloud infrastructure.</p></article>
+          <article class="hobby-card reveal"><span>NW</span><h3>Networking</h3><p>Building and testing network systems.</p></article>
+          <article class="hobby-card reveal"><span>WD</span><h3>Web Development</h3><p>Creating modern web experiences.</p></article>
+        </div>
+      </section>
+
+      <section class="section section-narrow" id="music">
+        <div class="music-module reveal">
+          <div class="music-copy">
+            <p class="eyebrow"><span></span> 06 / Audio Layer</p>
+            <h2>Music While Building The Future</h2>
+            <p>Music that accompanies me while studying, building projects, and exploring technology.</p>
+            <div class="equalizer" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="spotify-card">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX5trt9i14X7j?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify playlist"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-narrow" id="contact">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> 07 / Contact Uplink</p>
+          <h2>Contact</h2>
+          <p>Open for internship opportunities, collaboration, and technical discussions.</p>
+        </div>
+
+        <div class="card-grid card-grid-4">
+          <a class="contact-card reveal" href="mailto:tyojonathan12@gmail.com"><span>Email</span><strong>tyojonathan12@gmail.com</strong></a>
+          <a class="contact-card reveal" href="https://instagram.com/jofelix.dion" target="_blank" rel="noopener noreferrer"><span>Instagram</span><strong>@jofelix.dion</strong></a>
+          <div class="contact-card reveal"><span>GitHub</span><strong>Available Upon Request</strong></div>
+          <a class="contact-card reveal" href="tel:+6287816664012"><span>Phone</span><strong>0878-1666-4012</strong></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="terminal-footer">
+        <p>SYSTEM INFORMATION</p>
+        <p>USER: Jonathan Felix</p>
+        <p>ROLE: Computer Engineering Student</p>
+        <p>STATUS: AVAILABLE FOR INTERNSHIP</p>
+        <p>LOCATION: Bandung, Indonesia</p>
+        <p>&gt; system online...</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+</body>
+</html>
